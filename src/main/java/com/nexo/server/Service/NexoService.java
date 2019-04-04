@@ -18,6 +18,7 @@ public class NexoService {
         System.out.println("Nr.: "+tightening_result.getNr());
         System.out.println("IdCode: "+tightening_result.getIdCode());
         System.out.println("test2");
+        System.out.println("another test");
     }
 
     public List<Tightening_Result> getAllResults() {
