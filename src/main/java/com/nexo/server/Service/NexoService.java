@@ -17,7 +17,7 @@ public class NexoService {
         nexoDAO.insert(tightening_result);
         System.out.println("Nr.: "+tightening_result.getNr());
         System.out.println("IdCode: "+tightening_result.getIdCode());
-        System.out.println("test");
+        System.out.println("test2");
     }
 
     public List<Tightening_Result> getAllResults() {
