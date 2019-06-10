@@ -1,6 +1,6 @@
 package com.nexo.server.Controller;
 
-import com.nexo.server.Entity.Tightening_Result;
+import com.nexo.server.Entity.TighteningProcess;
 import com.nexo.server.Service.NexoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
@@ -19,7 +19,7 @@ public class NexoController {
     @RequestMapping(
             method = RequestMethod.POST,
             consumes = MediaType.APPLICATION_JSON_VALUE)
-    public void nexo(@RequestBody Tightening_Result tightening_result) {
+    public void nexo(@RequestBody TighteningProcess tightening_result) {
         nexoService.insertResult(tightening_result);
     }
 
@@ -27,16 +27,16 @@ public class NexoController {
             method = RequestMethod.GET,
             consumes = MediaType.APPLICATION_JSON_VALUE
     )
-    public void nexoList(@RequestBody List<Tightening_Result> tightening_results) {
+    public void nexoList(@RequestBody List<TighteningProcess> tightening_results) {
         System.out.println("List received");
-        for (Tightening_Result ti:tightening_results
+        for (TighteningProcess ti:tightening_results
              ) {
             nexoService.insertResult(ti);
         }
     }
 
     @RequestMapping(method = RequestMethod.GET)
-    public List<Tightening_Result> getAllResults() {
+    public List<TighteningProcess> getAllResults() {
         return nexoService.getAllResults();
     }
 
