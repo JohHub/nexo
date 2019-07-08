@@ -3,6 +3,10 @@ package com.nexo.server.Service;
 import com.nexo.server.DAO.NexoDAO;
 import com.nexo.server.Entity.TighteningProcess;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -24,5 +28,12 @@ public class NexoService {
 
     public List<TighteningProcess> getAllResults() {
         return nexoDAO.findAll();
+    }
+
+    public TighteningProcess getLastProcess() {
+        Pageable pageable = PageRequest.of(0, 1, Sort.Direction.DESC, "$natural");
+        Page<TighteningProcess> processPage = nexoDAO.findAll(pageable);
+
+        return processPage.getContent().get(0);
     }
 }

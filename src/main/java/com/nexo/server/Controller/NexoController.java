@@ -9,17 +9,19 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/nexo")
 @CrossOrigin
 public class NexoController {
 
     @Autowired
     private NexoService nexoService;
 
-    @RequestMapping(method = RequestMethod.GET)
+    @RequestMapping(method = RequestMethod.GET, value = "/nexo")
     public List<TighteningProcess> getAllResults() {
         return nexoService.getAllResults();
     }
+
+    @RequestMapping(method = RequestMethod.GET, value = "/nexoLast")
+    public TighteningProcess getLastProcess() { return nexoService.getLastProcess(); }
 
     @RequestMapping(
             method = RequestMethod.POST,
