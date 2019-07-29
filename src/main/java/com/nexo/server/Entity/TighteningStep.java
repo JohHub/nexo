@@ -13,25 +13,25 @@ public final class TighteningStep {
     private String result;
     private String name;
     @JsonProperty(value = "step type")
-    private String steptype;
+    private String stepType;
     private String row;
     private String column;
     private double category;
     @JsonProperty(value = "last cmd")
-    private String lastcmd;
+    private String lastCmd;
     private double torque;
     private double angle;
     private double duration;
     @JsonProperty(value = "quality code")
-    private String qualitycode;
+    private String qualityCode;
     private double speed;
     @JsonProperty(value = "angle threshold nom")
-    private double anglethresholdnom;
+    private double angleThresholdNom;
     @JsonProperty(value = "angle threshold act")
-    private double anglethresholdact;
+    private double angleThresholdAct;
 
     @JsonProperty(value = "tightening functions")
-    private List<TighteningFunction> tighteningfunctions = new ArrayList<TighteningFunction>();
+    private List<TighteningFunction> tighteningFunctions = new ArrayList<>();
     private Graph graph;
 
     /**
@@ -63,17 +63,17 @@ public final class TighteningStep {
     }
 
     /**
-     * @return the steptype
+     * @return the stepType
      */
-    public String getSteptype() {
-        return steptype;
+    public String getStepType() {
+        return stepType;
     }
 
     /**
-     * @param steptype the steptype to set
+     * @param stepType the stepType to set
      */
-    public void setSteptype(String steptype) {
-        this.steptype = steptype;
+    public void setStepType(String stepType) {
+        this.stepType = stepType;
     }
 
     /**
@@ -119,17 +119,17 @@ public final class TighteningStep {
     }
 
     /**
-     * @return the lastcmd
+     * @return the lastCmd
      */
-    public String getLastcmd() {
-        return lastcmd;
+    public String getLastCmd() {
+        return lastCmd;
     }
 
     /**
-     * @param lastcmd the lastcmd to set
+     * @param lastCmd the lastCmd to set
      */
-    public void setLastcmd(String lastcmd) {
-        this.lastcmd = lastcmd;
+    public void setLastCmd(String lastCmd) {
+        this.lastCmd = lastCmd;
     }
 
     /**
@@ -175,17 +175,17 @@ public final class TighteningStep {
     }
 
     /**
-     * @return the qualitycode
+     * @return the qualityCode
      */
-    public String getQualitycode() {
-        return qualitycode;
+    public String getQualityCode() {
+        return qualityCode;
     }
 
     /**
-     * @param qualitycode the qualitycode to set
+     * @param qualityCode the qualityCode to set
      */
-    public void setQualitycode(String qualitycode) {
-        this.qualitycode = qualitycode;
+    public void setQualityCode(String qualityCode) {
+        this.qualityCode = qualityCode;
     }
 
     /**
@@ -203,45 +203,45 @@ public final class TighteningStep {
     }
 
     /**
-     * @return the anglethresholdnom
+     * @return the angleThresholdNom
      */
-    public double getAnglethresholdnom() {
-        return anglethresholdnom;
+    public double getAngleThresholdNom() {
+        return angleThresholdNom;
     }
 
     /**
-     * @param anglethresholdnom the anglethresholdnom to set
+     * @param angleThresholdNom the angleThresholdNom to set
      */
-    public void setAnglethresholdnom(double anglethresholdnom) {
-        this.anglethresholdnom = anglethresholdnom;
+    public void setAngleThresholdNom(double angleThresholdNom) {
+        this.angleThresholdNom = angleThresholdNom;
     }
 
     /**
-     * @return the anglethresholdact
+     * @return the angleThresholdAct
      */
-    public double getAnglethresholdact() {
-        return anglethresholdact;
+    public double getAngleThresholdAct() {
+        return angleThresholdAct;
     }
 
     /**
-     * @param anglethresholdact the anglethresholdact to set
+     * @param angleThresholdAct the angleThresholdAct to set
      */
-    public void setAnglethresholdact(double anglethresholdact) {
-        this.anglethresholdact = anglethresholdact;
+    public void setAngleThresholdAct(double angleThresholdAct) {
+        this.angleThresholdAct = angleThresholdAct;
     }
 
     /**
-     * @return the tighteningfunctions
+     * @return the tighteningFunctions
      */
-    public List<TighteningFunction> getTighteningfunctions() {
-        return tighteningfunctions;
+    public List<TighteningFunction> getTighteningFunctions() {
+        return tighteningFunctions;
     }
 
     /**
-     * @param tighteningfunctions the tighteningfunctions to set
+     * @param tighteningFunctions the tighteningFunctions to set
      */
-    public void setTighteningfunctions(List<TighteningFunction> tighteningfunctions) {
-        this.tighteningfunctions = tighteningfunctions;
+    public void setTighteningFunctions(List<TighteningFunction> tighteningFunctions) {
+        this.tighteningFunctions = tighteningFunctions;
     }
 
     /**

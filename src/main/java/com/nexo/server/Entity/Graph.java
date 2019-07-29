@@ -11,53 +11,53 @@ import java.util.List;
 public final class Graph {
 
     @JsonProperty(value = "angle values")
-    List<Integer> angles = new ArrayList<Integer>();
+    private List<Integer> angleValues = new ArrayList<>();
     @JsonProperty(value = "torque values")
-    List<Double> torques = new ArrayList<Double>();
+    private List<Double> torqueValues = new ArrayList<>();
     @JsonProperty(value = "time values")
-    List<Double> timestamps = new ArrayList<Double>();
+    private List<Double> timeValues = new ArrayList<>();
 
     /**
-     * @return the angles
+     * @return the angleValues
      */
-    public List<Integer> getAngles() {
-        return angles;
+    public List<Integer> getAngleValues() {
+        return angleValues;
     }
 
     /**
-     * @param angles the angles to set
+     * @param angleValues the angleValues to set
      */
-    public void setAngles(List<Integer> angles) {
-        this.angles = angles;
+    public void setAngleValues(List<Integer> angleValues) {
+        this.angleValues = angleValues;
     }
 
     /**
-     * @return the torques
+     * @return the torqueValues
      */
-    public List<Double> getTorques() {
-        return torques;
+    public List<Double> getTorqueValues() {
+        return torqueValues;
     }
 
     /**
-     * @param torques the torques to set
+     * @param torqueValues the torqueValues to set
      */
-    public void setTorques(List<Double> torques) {
-        this.torques = torques;
+    public void setTorqueValues(List<Double> torqueValues) {
+        this.torqueValues = torqueValues;
     }
 
     /**
-     * @return the timestamps
+     * @return the timeValues
      */
-    public List<Double> getTimestamps() {
-        return timestamps;
+    public List<Double> getTimeValues() {
+        return timeValues;
     }
 
     /**
-     * @param timestamps the timestamps to set
+     * @param timeValues the timeValues to set
      */
-    public void setTimestamps(List<Double> timestamps) {
-        this.timestamps = timestamps;
+    public void setTimeValues(List<Double> timeValues) {
+        this.timeValues = timeValues;
     }
 
-    
+
 }

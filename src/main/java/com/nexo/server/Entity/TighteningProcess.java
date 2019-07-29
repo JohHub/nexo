@@ -14,56 +14,56 @@ public class TighteningProcess {
     private String result;
     private String channel;
     @JsonProperty(value = "prg nr")
-    private int prgnr;
+    private int prgNr;
     @JsonProperty(value = "prg name")
-    private String prgname;
+    private String prgName;
     @JsonProperty(value = "prg date")
-    private String prgdate;
+    private String prgDate;
     private int cycle;
     @JsonProperty(value = "nominal torque")
-    private double nominaltorque;
+    private double nominalTorque;
     private String date;
     @JsonProperty(value = "id code")
-    private String idcode;
+    private String idCode;
     @JsonProperty(value = "torque unit")
-    private String torqueunit;
+    private String torqueUnit;
     @JsonProperty(value = "last cmd")
-    private String lastcmd;
+    private String lastCmd;
     @JsonProperty(value = "quality code")
-    private String qualitycode;
+    private String qualityCode;
     @JsonProperty(value = "total time")
-    private String totaltime;
+    private String totalTime;
     @JsonProperty(value = "tool serial")
-    private String toolserial;
+    private String toolSerial;
     @JsonProperty(value = "rework code")
-    private int reworkcode;
+    private int reworkCode;
     @JsonProperty(value = "rework text")
-    private String reworktext;
+    private String reworkText;
     @JsonProperty(value = "cell id")
-    private String cellid;
+    private String cellId;
     @JsonProperty(value = "job nr")
-    private int jobnr;
+    private int jobNr;
     @JsonProperty(value = "MCE factor")
-    private double MCEfactor;
+    private double MCEFactor;
     @JsonProperty(value = "batch nr")
-    private String batchnr;
+    private String batchNr;
     @JsonProperty(value = "batch canceled")
-    private int batchcanceled;
+    private int batchCanceled;
     @JsonProperty(value = "batch direction OK")
-    private int batchdirectionOK;
+    private int batchDirectionOK;
     @JsonProperty(value = "batch direction NOK")
-    private int batchdirectionNOK;
+    private int batchDirectionNOK;
     @JsonProperty(value = "batch max OK")
-    private int batchmaxOK;
+    private int batchMaxOK;
     @JsonProperty(value = "batch max NOK")
-    private int batchmaxNOK;
+    private int batchMaxNOK;
     @JsonProperty(value = "batch OK")
     private int batchOK;
     @JsonProperty(value = "batch NOK")
     private int batchNOK;
 
     @JsonProperty(value = "tightening steps")
-    private List <TighteningStep> tighteningsteps = new ArrayList <TighteningStep> ();
+    private List<TighteningStep> tighteningSteps = new ArrayList<>();
 
     /**
      * @return the nr
@@ -108,45 +108,45 @@ public class TighteningProcess {
     }
 
     /**
-     * @return the prgnr
+     * @return the prgNr
      */
-    public int getPrgnr() {
-        return prgnr;
+    public int getPrgNr() {
+        return prgNr;
     }
 
     /**
-     * @param prgnr the prgnr to set
+     * @param prgNr the prgNr to set
      */
-    public void setPrgnr(int prgnr) {
-        this.prgnr = prgnr;
+    public void setPrgNr(int prgNr) {
+        this.prgNr = prgNr;
     }
 
     /**
-     * @return the prgname
+     * @return the prgName
      */
-    public String getPrgname() {
-        return prgname;
+    public String getPrgName() {
+        return prgName;
     }
 
     /**
-     * @param prgname the prgname to set
+     * @param prgName the prgName to set
      */
-    public void setPrgname(String prgname) {
-        this.prgname = prgname;
+    public void setPrgName(String prgName) {
+        this.prgName = prgName;
     }
 
     /**
-     * @return the prgdate
+     * @return the prgDate
      */
-    public String getPrgdate() {
-        return prgdate;
+    public String getPrgDate() {
+        return prgDate;
     }
 
     /**
-     * @param prgdate the prgdate to set
+     * @param prgDate the prgDate to set
      */
-    public void setPrgdate(String prgdate) {
-        this.prgdate = prgdate;
+    public void setPrgDate(String prgDate) {
+        this.prgDate = prgDate;
     }
 
     /**
@@ -164,17 +164,17 @@ public class TighteningProcess {
     }
 
     /**
-     * @return the nominaltorque
+     * @return the nominalTorque
      */
-    public double getNominaltorque() {
-        return nominaltorque;
+    public double getNominalTorque() {
+        return nominalTorque;
     }
 
     /**
-     * @param nominaltorque the nominaltorque to set
+     * @param nominalTorque the nominalTorque to set
      */
-    public void setNominaltorque(double nominaltorque) {
-        this.nominaltorque = nominaltorque;
+    public void setNominalTorque(double nominalTorque) {
+        this.nominalTorque = nominalTorque;
     }
 
     /**
@@ -192,241 +192,241 @@ public class TighteningProcess {
     }
 
     /**
-     * @return the idcode
+     * @return the idCode
      */
-    public String getIdcode() {
-        return idcode;
+    public String getIdCode() {
+        return idCode;
     }
 
     /**
-     * @param idcode the idcode to set
+     * @param idCode the idCode to set
      */
-    public void setIdcode(String idcode) {
-        this.idcode = idcode;
+    public void setIdCode(String idCode) {
+        this.idCode = idCode;
     }
 
     /**
-     * @return the torqueunit
+     * @return the torqueUnit
      */
-    public String getTorqueunit() {
-        return torqueunit;
+    public String getTorqueUnit() {
+        return torqueUnit;
     }
 
     /**
-     * @param torqueunit the torqueunit to set
+     * @param torqueUnit the torqueUnit to set
      */
-    public void setTorqueunit(String torqueunit) {
-        this.torqueunit = torqueunit;
+    public void setTorqueUnit(String torqueUnit) {
+        this.torqueUnit = torqueUnit;
     }
 
     /**
-     * @return the lastcmd
+     * @return the lastCmd
      */
-    public String getLastcmd() {
-        return lastcmd;
+    public String getLastCmd() {
+        return lastCmd;
     }
 
     /**
-     * @param lastcmd the lastcmd to set
+     * @param lastCmd the lastCmd to set
      */
-    public void setLastcmd(String lastcmd) {
-        this.lastcmd = lastcmd;
+    public void setLastCmd(String lastCmd) {
+        this.lastCmd = lastCmd;
     }
 
     /**
-     * @return the qualitycode
+     * @return the qualityCode
      */
-    public String getQualitycode() {
-        return qualitycode;
+    public String getQualityCode() {
+        return qualityCode;
     }
 
     /**
-     * @param qualitycode the qualitycode to set
+     * @param qualityCode the qualityCode to set
      */
-    public void setQualitycode(String qualitycode) {
-        this.qualitycode = qualitycode;
+    public void setQualityCode(String qualityCode) {
+        this.qualityCode = qualityCode;
     }
 
     /**
-     * @return the totaltime
+     * @return the totalTime
      */
-    public String getTotaltime() {
-        return totaltime;
+    public String getTotalTime() {
+        return totalTime;
     }
 
     /**
-     * @param totaltime the totaltime to set
+     * @param totalTime the totalTime to set
      */
-    public void setTotaltime(String totaltime) {
-        this.totaltime = totaltime;
+    public void setTotalTime(String totalTime) {
+        this.totalTime = totalTime;
     }
 
     /**
-     * @return the toolserial
+     * @return the toolSerial
      */
-    public String getToolserial() {
-        return toolserial;
+    public String getToolSerial() {
+        return toolSerial;
     }
 
     /**
-     * @param toolserial the toolserial to set
+     * @param toolSerial the toolSerial to set
      */
-    public void setToolserial(String toolserial) {
-        this.toolserial = toolserial;
+    public void setToolSerial(String toolSerial) {
+        this.toolSerial = toolSerial;
     }
 
     /**
-     * @return the reworkcode
+     * @return the reworkCode
      */
-    public int getReworkcode() {
-        return reworkcode;
+    public int getReworkCode() {
+        return reworkCode;
     }
 
     /**
-     * @param reworkcode the reworkcode to set
+     * @param reworkCode the reworkCode to set
      */
-    public void setReworkcode(int reworkcode) {
-        this.reworkcode = reworkcode;
+    public void setReworkCode(int reworkCode) {
+        this.reworkCode = reworkCode;
     }
 
     /**
-     * @return the reworktext
+     * @return the reworkText
      */
-    public String getReworktext() {
-        return reworktext;
+    public String getReworkText() {
+        return reworkText;
     }
 
     /**
-     * @param reworktext the reworktext to set
+     * @param reworkText the reworkText to set
      */
-    public void setReworktext(String reworktext) {
-        this.reworktext = reworktext;
+    public void setReworkText(String reworkText) {
+        this.reworkText = reworkText;
     }
 
     /**
-     * @return the cellid
+     * @return the cellId
      */
-    public String getCellid() {
-        return cellid;
+    public String getCellId() {
+        return cellId;
     }
 
     /**
-     * @param cellid the cellid to set
+     * @param cellId the cellId to set
      */
-    public void setCellid(String cellid) {
-        this.cellid = cellid;
+    public void setCellId(String cellId) {
+        this.cellId = cellId;
     }
 
     /**
-     * @return the jobnr
+     * @return the jobNr
      */
-    public int getJobnr() {
-        return jobnr;
+    public int getJobNr() {
+        return jobNr;
     }
 
     /**
-     * @param jobnr the jobnr to set
+     * @param jobNr the jobNr to set
      */
-    public void setJobnr(int jobnr) {
-        this.jobnr = jobnr;
+    public void setJobNr(int jobNr) {
+        this.jobNr = jobNr;
     }
 
     /**
      * @return the mCEfactor
      */
-    public double getMCEfactor() {
-        return MCEfactor;
+    public double getMCEFactor() {
+        return MCEFactor;
     }
 
     /**
      * @param mCEfactor the mCEfactor to set
      */
-    public void setMCEfactor(double mCEfactor) {
-        MCEfactor = mCEfactor;
+    public void setMCEFactor(double mCEfactor) {
+        MCEFactor = mCEfactor;
     }
 
     /**
-     * @return the batchnr
+     * @return the batchNr
      */
-    public String getBatchnr() {
-        return batchnr;
+    public String getBatchNr() {
+        return batchNr;
     }
 
     /**
-     * @param batchnr the batchnr to set
+     * @param batchNr the batchNr to set
      */
-    public void setBatchnr(String batchnr) {
-        this.batchnr = batchnr;
+    public void setBatchNr(String batchNr) {
+        this.batchNr = batchNr;
     }
 
     /**
-     * @return the batchcanceled
+     * @return the batchCanceled
      */
-    public int getBatchcanceled() {
-        return batchcanceled;
+    public int getBatchCanceled() {
+        return batchCanceled;
     }
 
     /**
-     * @param batchcanceled the batchcanceled to set
+     * @param batchCanceled the batchCanceled to set
      */
-    public void setBatchcanceled(int batchcanceled) {
-        this.batchcanceled = batchcanceled;
+    public void setBatchCanceled(int batchCanceled) {
+        this.batchCanceled = batchCanceled;
     }
 
     /**
-     * @return the batchdirectionOK
+     * @return the batchDirectionOK
      */
-    public int getBatchdirectionOK() {
-        return batchdirectionOK;
+    public int getBatchDirectionOK() {
+        return batchDirectionOK;
     }
 
     /**
-     * @param batchdirectionOK the batchdirectionOK to set
+     * @param batchDirectionOK the batchDirectionOK to set
      */
-    public void setBatchdirectionOK(int batchdirectionOK) {
-        this.batchdirectionOK = batchdirectionOK;
+    public void setBatchDirectionOK(int batchDirectionOK) {
+        this.batchDirectionOK = batchDirectionOK;
     }
 
     /**
-     * @return the batchdirectionNOK
+     * @return the batchDirectionNOK
      */
-    public int getBatchdirectionNOK() {
-        return batchdirectionNOK;
+    public int getBatchDirectionNOK() {
+        return batchDirectionNOK;
     }
 
     /**
-     * @param batchdirectionNOK the batchdirectionNOK to set
+     * @param batchDirectionNOK the batchDirectionNOK to set
      */
-    public void setBatchdirectionNOK(int batchdirectionNOK) {
-        this.batchdirectionNOK = batchdirectionNOK;
+    public void setBatchDirectionNOK(int batchDirectionNOK) {
+        this.batchDirectionNOK = batchDirectionNOK;
     }
 
     /**
-     * @return the batchmaxOK
+     * @return the batchMaxOK
      */
-    public int getBatchmaxOK() {
-        return batchmaxOK;
+    public int getBatchMaxOK() {
+        return batchMaxOK;
     }
 
     /**
-     * @param batchmaxOK the batchmaxOK to set
+     * @param batchMaxOK the batchMaxOK to set
      */
-    public void setBatchmaxOK(int batchmaxOK) {
-        this.batchmaxOK = batchmaxOK;
+    public void setBatchMaxOK(int batchMaxOK) {
+        this.batchMaxOK = batchMaxOK;
     }
 
     /**
-     * @return the batchmaxNOK
+     * @return the batchMaxNOK
      */
-    public int getBatchmaxNOK() {
-        return batchmaxNOK;
+    public int getBatchMaxNOK() {
+        return batchMaxNOK;
     }
 
     /**
-     * @param batchmaxNOK the batchmaxNOK to set
+     * @param batchMaxNOK the batchMaxNOK to set
      */
-    public void setBatchmaxNOK(int batchmaxNOK) {
-        this.batchmaxNOK = batchmaxNOK;
+    public void setBatchMaxNOK(int batchMaxNOK) {
+        this.batchMaxNOK = batchMaxNOK;
     }
 
     /**
@@ -458,17 +458,17 @@ public class TighteningProcess {
     }
 
     /**
-     * @return the tighteningsteps
+     * @return the tighteningSteps
      */
-    public List<TighteningStep> getTighteningsteps() {
-        return tighteningsteps;
+    public List<TighteningStep> getTighteningSteps() {
+        return tighteningSteps;
     }
 
     /**
-     * @param tighteningsteps the tighteningsteps to set
+     * @param tighteningSteps the tighteningSteps to set
      */
-    public void setTighteningsteps(List<TighteningStep> tighteningsteps) {
-        this.tighteningsteps = tighteningsteps;
+    public void setTighteningSteps(List<TighteningStep> tighteningSteps) {
+        this.tighteningSteps = tighteningSteps;
     }
    
    

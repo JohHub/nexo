@@ -16,8 +16,13 @@ public class NexoController {
     private NexoService nexoService;
 
     @RequestMapping(method = RequestMethod.GET, value = "/nexo")
-    public List<TighteningProcess> getAllResults() {
-        return nexoService.getAllResults();
+    public List<TighteningProcess> getXResults(@RequestParam(defaultValue = "0") int index) {
+        return nexoService.getXResults(index);
+    }
+
+    @RequestMapping(method = RequestMethod.GET, value = "/nexoAll")
+    public List<TighteningProcess> getAll() {
+        return nexoService.getAll();
     }
 
     @RequestMapping(method = RequestMethod.GET, value = "/nexoLast")
@@ -25,6 +30,7 @@ public class NexoController {
 
     @RequestMapping(
             method = RequestMethod.POST,
+            value = "/nexo",
             consumes = MediaType.APPLICATION_JSON_VALUE)
     public void nexo(@RequestBody TighteningProcess tighteningProcess) {
         nexoService.insertResult(tighteningProcess);
