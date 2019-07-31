@@ -20,6 +20,11 @@ public class NexoController {
         return nexoService.getXResults(index);
     }
 
+    @RequestMapping(method = RequestMethod.GET, value = "/nexo/{idCode}")
+    public TighteningProcess getByIdCode(@PathVariable String idCode) {
+        return nexoService.getByIdCode(idCode);
+    }
+
     @RequestMapping(method = RequestMethod.GET, value = "/nexoAll")
     public List<TighteningProcess> getAll() {
         return nexoService.getAll();

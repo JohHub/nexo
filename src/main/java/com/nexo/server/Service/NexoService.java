@@ -51,4 +51,8 @@ public class NexoService {
     public List<TighteningProcess> getAll() {
         return nexoDAO.findAll();
     }
+
+    public TighteningProcess getByIdCode(String idCode) {
+        return nexoDAO.findByIdCode(idCode);
+    }
 }
